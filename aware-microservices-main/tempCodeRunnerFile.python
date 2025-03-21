@@ -1,0 +1,11 @@
+import socket
+
+def is_port_free(port):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        result = sock.connect_ex(('localhost', port))
+        return result != 0
+
+ports_to_check = [5001, 5002, 5003, 27017, 5673, 15672, 8000, 8443, 8001, 8444, 1337]
+for port in ports_to_check:
+    status = "free" if is_port_free(port) else "in use"
+    print(f"Port {port} is {status}.")
