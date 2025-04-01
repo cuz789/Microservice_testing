@@ -1,4 +1,4 @@
-# Aware-Microservices 
+# Aware-Microservices Project setup
 ## Project Overview
 
 Aware-Microservices is a project designed to demonstrate the architecture and implementation of a microservices-based system. This project utilizes various technologies to build a robust and scalable system, including MongoDB for the database, Flask for the microservices, Kong for the API gateway, and RabbitMQ for the event-driven system.
@@ -160,6 +160,7 @@ pytest tests/
 
 This command will run all the tests in the `tests` directory.
 
+
 ## Environment Variables
 
 The project requires certain environment variables to be set for proper configuration. Use the `.env.example` file as a template to create your own `.env` file with the necessary values.
@@ -167,3 +168,12 @@ The project requires certain environment variables to be set for proper configur
 ## Conclusion
 
 The Aware-Microservices project showcases the implementation of a microservices architecture using modern technologies. By following the instructions provided, you can set up and run the project on your local machine, gaining insights into the workings of a microservices-based system.
+
+
+# Microservice Unit and Integration Test
+The Microservice tests were developed for the project that is already built by the dev team.
+The unit tests include :
+Order microservice testing : POST and GET
+User microservice testing : POST and GET
+Rabbitmq testing : PUT 
+Integration Testing of the entire aware microservice with coverage above 90% is achieved for all the tests.
